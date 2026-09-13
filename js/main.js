@@ -12,3 +12,15 @@ navLinks.querySelectorAll('a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+const heroBgLayers = document.querySelectorAll('.hero-bg-layer');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (heroBgLayers.length > 1 && !prefersReducedMotion) {
+  let activeIndex = 0;
+  setInterval(() => {
+    heroBgLayers[activeIndex].classList.remove('is-active');
+    activeIndex = (activeIndex + 1) % heroBgLayers.length;
+    heroBgLayers[activeIndex].classList.add('is-active');
+  }, 15000);
+}
