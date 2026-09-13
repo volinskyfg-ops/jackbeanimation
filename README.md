@@ -1,6 +1,6 @@
-# Jack Bean Animation Club
+# Paly Animation Club
 
-Website for the Jack Bean Animation Club at Palo Alto High School.
+Website for the Paly Animation Club at Palo Alto High School.
 
 ## Structure
 
