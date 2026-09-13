@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paly Animation Club</title>
   <meta name="description" content="Paly Animation Club — learn animation, make short films, and bring your imagination to life.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='5' fill='%2334a771'/%3E%3Cpath d='M10 7.5l6.5 4.5-6.5 4.5v-9z' fill='%23fffaf1'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,9 @@
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="#top">
-        <span class="brand-mark">🎞️</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/><path d="M10 7.5l6.5 4.5-6.5 4.5v-9z" fill="var(--paper)"/></svg>
+        </span>
         <span class="brand-text">Paly <em>Animation Club</em></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -39,6 +41,8 @@
       <div class="hero-bg" aria-hidden="true">
         <div class="hero-bg-layer is-active" style="background-image: url('media/hero-bg-1.jpg');"></div>
         <div class="hero-bg-layer" style="background-image: url('media/hero-bg-2.jpg');"></div>
+        <div class="hero-bg-layer" style="background-image: url('media/hero-bg-3.jpg');"></div>
+        <div class="hero-bg-layer" style="background-image: url('media/hero-bg-4.jpg');"></div>
         <div class="hero-scrim"></div>
       </div>
       <div class="hero-content">
@@ -76,17 +80,23 @@
         </p>
         <div class="card-grid">
           <div class="info-card">
-            <div class="card-icon">✏️</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
             <h3>Individual Growth</h3>
             <p>Members complete 4–7 small animation projects on their own throughout the year to hone their skills.</p>
           </div>
           <div class="info-card">
-            <div class="card-icon">🎥</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="17" y2="20"/><line x1="3" y1="9" x2="7" y2="9"/><line x1="3" y1="14" x2="7" y2="14"/><line x1="17" y1="9" x2="21" y2="9"/><line x1="17" y1="14" x2="21" y2="14"/></svg>
+            </div>
             <h3>One Big Film</h3>
             <p>The whole club collaborates on a high-quality 2-minute animated short over the course of the school year.</p>
           </div>
           <div class="info-card">
-            <div class="card-icon">🏆</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
             <h3>Looking Ahead</h3>
             <p>If the club continues, we'd love to launch an animation festival honoring legendary Disney animator Ollie Johnston, one of the famous "Nine Old Men."</p>
           </div>
@@ -137,17 +147,23 @@
         <h2><span class="tag">03</span> Get Involved</h2>
         <div class="card-grid three">
           <div class="info-card">
-            <div class="card-icon">📺</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
             <h3>Watch for Us</h3>
             <p>Keep an eye out for our animated teaser trailers on the morning video announcements.</p>
           </div>
           <div class="info-card">
-            <div class="card-icon">🪧</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4a1 1 0 0 1 1-1h3"/><path d="M17 3h3a1 1 0 0 1 1 1v3"/><path d="M21 17v3a1 1 0 0 1-1 1h-3"/><path d="M7 21H4a1 1 0 0 1-1-1v-3"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+            </div>
             <h3>Scan &amp; Sign Up</h3>
             <p>Look for QR-code posters around campus linking straight to our sign-up form.</p>
           </div>
           <div class="info-card">
-            <div class="card-icon">🎪</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <h3>Club Fair</h3>
             <p>Stop by our table for live digital drawing demos and custom flipbooks made on the spot.</p>
           </div>
@@ -185,14 +201,18 @@
         <p class="lead">Ready to join, or just have questions about meetings and projects? Reach out anytime.</p>
         <div class="contact-grid">
           <a class="contact-card" href="mailto:jv60595@pausd.us">
-            <span class="card-icon">✉️</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            </span>
             <div>
               <h3>Club President</h3>
               <p>jv60595@pausd.us</p>
             </div>
           </a>
           <a class="contact-card" href="mailto:bwilson@pausd.org">
-            <span class="card-icon">🏫</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8l9-5 9 5"/><line x1="9" y1="21" x2="9" y2="14"/><line x1="15" y1="21" x2="15" y2="14"/></svg>
+            </span>
             <div>
               <h3>Faculty Advisor</h3>
               <p>bwilson@pausd.org</p>
@@ -205,7 +225,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>🎞️ Paly Animation Club — Palo Alto High School</p>
+      <p>Paly Animation Club — Palo Alto High School</p>
       <p class="footer-sub">Made frame by frame, by students who love to animate.</p>
     </div>
   </footer>

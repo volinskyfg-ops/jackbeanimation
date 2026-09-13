@@ -71,7 +71,14 @@ img { max-width: 100%; display: block; }
   font-size: 1.25rem;
 }
 
-.brand-mark { font-size: 1.6rem; }
+.brand-mark {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.brand-mark svg { width: 100%; height: 100%; }
 .brand-text em { color: var(--accent); font-style: normal; }
 
 .nav-links {
@@ -288,7 +295,15 @@ img { max-width: 100%; display: block; }
 }
 .info-card:hover, .person-card:hover { transform: translateY(-4px); }
 
-.card-icon { font-size: 2rem; margin-bottom: 12px; }
+.card-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.card-icon svg { width: 100%; height: 100%; }
 .info-card h3, .person-card h3 { font-size: 1.15rem; }
 .info-card p { color: var(--muted); margin: 0; }
 
