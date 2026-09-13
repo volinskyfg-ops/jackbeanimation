@@ -179,34 +179,21 @@ img { max-width: 100%; display: block; }
 }
 
 .flipbook {
-  width: 220px;
-  height: 220px;
+  width: min(320px, 100%);
+  aspect-ratio: 16 / 9;
   background: #fff;
   border-radius: 20px;
   box-shadow: var(--shadow);
   border: 3px solid var(--ink);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   position: relative;
 }
 
-.flip-frame {
-  width: 70px;
-  height: 70px;
-  background: var(--gold);
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-  animation: bounce 1.1s infinite cubic-bezier(.5,0,.5,1);
-}
-
-@keyframes bounce {
-  0%   { transform: translateY(-60px) scaleX(0.9) scaleY(1.1); background: var(--gold); }
-  45%  { transform: translateY(60px) scaleX(1.15) scaleY(0.8); background: var(--accent); }
-  50%  { transform: translateY(64px) scaleX(1.3) scaleY(0.6); background: var(--accent); }
-  55%  { transform: translateY(60px) scaleX(1.15) scaleY(0.8); background: var(--accent); }
-  100% { transform: translateY(-60px) scaleX(0.9) scaleY(1.1); background: var(--gold); }
+.flipbook-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .flip-caption {
