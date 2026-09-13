@@ -4,7 +4,7 @@ Website for the Paly Animation Club at Palo Alto High School.
 
 ## Structure
 
-- `index.html` — single-page site (about, goals, activities, join, officers, contact)
+- `index.html` — single-page site (about, goals, activities, officers, contact)
 - `css/style.css` — styling
 - `js/main.js` — mobile nav toggle
 

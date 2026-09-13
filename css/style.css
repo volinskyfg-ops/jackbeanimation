@@ -5,7 +5,6 @@
   --accent: #34a771;
   --accent-dark: #26825a;
   --teal: #1fb6a6;
-  --gold: #ffc23c;
   --violet: #6c5ce7;
   --muted: #6b6480;
   --radius: 18px;
@@ -294,13 +293,6 @@ img { max-width: 100%; display: block; }
 }
 .timeline-item h3 { font-size: 1.1rem; margin-bottom: 4px; }
 .timeline-item p { margin: 0; color: var(--muted); }
-
-/* Join section */
-.join { background: linear-gradient(135deg, var(--violet), var(--accent)); color: #fff; }
-.join .lead { color: rgba(255,255,255,0.9); }
-.join-list { margin-bottom: 34px; display: flex; flex-direction: column; gap: 10px; font-weight: 600; }
-.join .btn-primary { background: #fff; color: var(--accent-dark); box-shadow: none; }
-.join .btn-primary:hover { background: var(--gold); color: var(--ink); }
 
 /* Officers */
 .person-avatar {
