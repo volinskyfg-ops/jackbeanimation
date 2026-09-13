@@ -283,7 +283,7 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-.card-grid.three { grid-template-columns: repeat(3, 1fr); }
+.card-grid.two { grid-template-columns: repeat(2, 1fr); max-width: 640px; margin: 0 auto; }
 
 .info-card, .person-card {
   background: #fff;
@@ -391,7 +391,7 @@ img { max-width: 100%; display: block; }
   .hero { grid-template-columns: 1fr; text-align: center; }
   .hero-actions { justify-content: center; }
   .hero-sub { margin-left: auto; margin-right: auto; }
-  .card-grid, .card-grid.three, .contact-grid { grid-template-columns: 1fr; }
+  .card-grid, .card-grid.two, .contact-grid { grid-template-columns: 1fr; max-width: none; }
 }
 
 @media (max-width: 720px) {
